@@ -1,0 +1,18 @@
+<h4>商品信息</h4>
+<div>
+  <strong>流订阅 subscribe</strong>
+  <ul>
+    <li *ngFor="let product of products">
+      <span>{{product.title}}</span>
+    </li>
+  </ul>
+</div>
+<hr>
+<div>
+  <strong>异步管道 async</strong>
+  <ul>
+      <li *ngFor="let product2 of products2 | async">
+        <span>{{product2.desc}}</span>
+      </li>
+    </ul>
+</div>
